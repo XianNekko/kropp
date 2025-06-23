@@ -646,6 +646,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }
 
+.join-us {
+  background-color: var(--color-dark);
+}
+
 .join-us-video-wrapper {
   position: relative;
   display: flex;
