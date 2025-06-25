@@ -990,6 +990,10 @@ input[type=number] {
   margin-bottom: 60px;
 }
 
+.footer-logo-image {
+  height: auto;
+}
+
 .footer-column-title {
   font-size: clamp(18px, 1.15vw, 22px);
 }
@@ -1153,6 +1157,22 @@ input[type=number] {
   .calculate-table tfoot td {
     padding-top: 10px;
   }
+
+  .footer-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .footer-main {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .footer-body {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1268,5 +1288,21 @@ input[type=number] {
 
   .calculate-table-wrapper::before {
     display: none;
+  }
+
+  .footer-header:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .footer-main {
+    padding-top: 50px;
+  }
+
+  .footer-body {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-subscribe:not(:last-child) {
+    margin-bottom: 40px;
   }
 }
